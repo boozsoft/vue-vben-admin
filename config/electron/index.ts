@@ -42,14 +42,14 @@ class createWin {
         enableRemoteModule: true,
       },
     });
-    // win.webContents.openDevTools()
+    // win.webContents.openDevTools();
     // @ts-ignore
-    win.maximize();
+    // win.maximize();
     // win.maximize()
 
     const URL = is_dev
       ? `http://localhost:${process.env.PORT}` // vite 启动的服务器地址
-      : `file://${join(__dirname, '../../dist/render/index.html')}`; // vite 构建后的静态文件地址
+      : `file://${join(__dirname, '../../dist/index.html')}`; // vite 构建后的静态文件地址
 
     // @ts-ignore
     win.loadURL(URL);
